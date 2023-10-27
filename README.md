@@ -2,7 +2,7 @@
 We provided a step-by-step guide for performing colocalization analysis using the coloc package in R.
 ![Image text](https://user-images.githubusercontent.com/147773802/278616135-d925301d-3a2e-4d90-9e77-13345ce4b8bb.png)
 
-# Colocalization Visualization Guide 📊
+# 📊 Colocalization Visualization Guide 
 
 This guide provides a detailed walkthrough on the visualization of colocalization results in R. The visualization aims to represent the association of specific SNPs with two different phenotypes, typically GWAS and eQTL datasets, to understand shared genetic architectures.
 
