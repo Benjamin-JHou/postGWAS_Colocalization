@@ -2,12 +2,14 @@
 We provided a step-by-step guide for performing colocalization analysis using the coloc package in R.
 ![Image text](https://user-images.githubusercontent.com/147773802/278616135-d925301d-3a2e-4d90-9e77-13345ce4b8bb.png)
 
+---
 # 📊 Colocalization Visualization Guide 
 
 This guide provides a detailed walkthrough on the visualization of colocalization results in R. The visualization aims to represent the association of specific SNPs with two different phenotypes, typically GWAS and eQTL datasets, to understand shared genetic architectures.
 
 The script [`coloc_Visualizition.R`](https://github.com/Benjamin-JHou/postGWAS_Colocalization/blob/main/coloc_Visualizition.R) provides a step-by-step approach to generate the colocalization plot.
 
+---
 # 📥 Importing Data
 
 ### 🧬 Import Phenotype 1 (GWAS) data
@@ -41,10 +43,12 @@ results <- coloc.abf(dataset1=list(beta=merged_data$beta_GWAS, varbeta=merged_da
 - ⚠️ Columns "pvalue_GWAS" and "pvalue_eQTL" contain the p-values for GWAS and eQTL respectively
 - ⚠️ Replace sample_size_gwas and sample_size_eqtl with the actual sample sizes for the correct GWAS and eQTL studies, respectively.
 
+---
 # 🔍 Interpreting Results
 
 The coloc.abf function outputs posterior probabilities for each of the five hypotheses (H0 to H4). In general, a high posterior probability for H4 suggests that the GWAS and eQTL signals colocalize, indicating that they are likely driven by the same causal variant.
 
+---
 # 📚 Resources for Colocalization Analysis
 
 Below are some essential resources and datasets for performing colocalization analysis:
