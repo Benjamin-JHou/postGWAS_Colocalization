@@ -1,7 +1,14 @@
 # 🌟 postGWAS_Colocalization
 We provided a step-by-step guide for performing colocalization analysis using the coloc package in R.
 ![Image text](https://user-images.githubusercontent.com/147773802/278616135-d925301d-3a2e-4d90-9e77-13345ce4b8bb.png)
-## 📥 Importing Data
+
+# Colocalization Visualization Guide 📊
+
+This guide provides a detailed walkthrough on the visualization of colocalization results in R. The visualization aims to represent the association of specific SNPs with two different phenotypes, typically GWAS and eQTL datasets, to understand shared genetic architectures.
+
+The script [`coloc_Visualizition.R`](https://github.com/Benjamin-JHou/postGWAS_Colocalization/blob/main/coloc_Visualizition.R) provides a step-by-step approach to generate the colocalization plot.
+
+# 📥 Importing Data
 
 ### 🧬 Import Phenotype 1 (GWAS) data
 ```r
@@ -16,14 +23,14 @@ eqtl_data <- read.table("path_to_eqtl_data.txt", header=TRUE, sep="\t")
 ```
 - ⚠️ Replace path_to_eqtl_data.txt with the path to the correct eQTL dataset.
 
-### 🔄 Merging GWAS and eQTL data
+# 🔄 Merging GWAS and eQTL data
 Before performing the analysis, ensure that the datasets are merged based on the SNP IDs.
 ```r
 merged_data <- merge(gwas_data, eqtl_data, by="SNP_ID")
 ```
 Replace SNP_ID with the appropriate column name for SNP identifiers if it's different in datasets.
 
-### 📊 Performing Colocalization Analysis
+# 📊 Performing Colocalization Analysis
 With the datasets imported and merged, performing the colocalization analysis.
 ```r
 library(coloc)
