@@ -10,6 +10,17 @@ This guide provides a detailed walkthrough on the visualization of colocalizatio
 The script [`coloc_Visualizition.R`](https://github.com/Benjamin-JHou/postGWAS_Colocalization/blob/main/coloc_Visualizition.R) provides a step-by-step approach to generate the colocalization plot.
 
 ---
+# 🛜 Download and install coloc
+```r
+if(!require("remotes"))
+  install.packages("remotes")
+  install.packages("dplyr")
+library(remotes)
+install_github("chr1swallace/coloc",build_vignettes=TRUE)
+library("coloc")
+library(dplyr)
+```
+
 # 📥 Importing Data
 
 ### 🧬 Import Phenotype 1 (GWAS) data
