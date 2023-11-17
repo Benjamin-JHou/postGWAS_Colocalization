@@ -2,10 +2,10 @@ library("coloc")
 library(dplyr)
 
 # Import Phenotype 1 (GWAS) data：
-gwas <- read.table(file="/Users/zhoujunyu/Desktop/GWAS.txt", header=T);
+gwas <- read.table(file="/～path/GWAS.txt", header=T);
 
 # Import Phenotype 2 (eQTL) data:
-eqtl <- read.table(file="/Users/zhoujunyu/Desktop/eQTL.txt", header=T);
+eqtl <- read.table(file="/～path/eQTL.txt", header=T);
 
 # Merging GWAS and eQTL data
 
